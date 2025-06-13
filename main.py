@@ -2,16 +2,16 @@ from tkinter import *
 
 import tkintermapview
 
-pharmacies: list = []
+cemeteries: list = []
 clients:list=[]
 workers:list=[]
 
 
 class Pharmacy:
-    def _init_(self, pharmacy_name, pharmacy_location, ):
-        self.pharmacy_name = pharmacy_name
+    def _init_(self, cemetery_name, cemetery_location, ):
+        self.cemetery_name = cemetery_name
 
-        self.pharmacy_location = pharmacy_location
+        self.cemetery_cemetery = cemetery_location
 
         self.coordinates = self.get_coordinates()
         # self.marker=map_widget.set_marker(self.coordinates[0],self.coordinates[1])
@@ -52,9 +52,9 @@ class Client:
 
 
 class Workers:
-    def _init_(self,worker_name,worker_pharmacy,worker_location):
+    def _init_(self,worker_name,worker_cemetery,worker_location):
         self.worker_name =worker_name
-        self.worker_pharmacy=worker_pharmacy
+        self.worker_cemetery=worker_cemetery
         self.worker_location=worker_location
 
         self.coordinates=self.get_coordinates()
